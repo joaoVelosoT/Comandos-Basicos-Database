@@ -38,5 +38,8 @@ LEFT JOIN Turmas ON Turmas.turma_id = Alunos.turma_id
 
 SELECT Professores.nome
 FROM Professores
-LEFT JOIN Turma_Professor ON Professores.professores.id = Turma_Professor.professor_id
+LEFT JOIN Turma_Professor ON Professores.professor_id = Turma_Professor.professor_id
 WHERE Turma_Professor.turma_id IS NULL;
+
+
+
